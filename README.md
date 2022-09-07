@@ -3,7 +3,7 @@
 
 <!-- PROJECT LOGO -->
 <div align="center">
-<a href="https://github.com/hamdanbasri/AutoRotateControl/blob/main/AutoRotateControl.cs">
+<a href="https://github.com/hamdanbasri/HapticController-UnityXRInteractionToolkit/blob/main/HapticController.cs">
 <img src="images/FPSDisplayLogo.png" alt="Logo">
 </a>
 <p align="center">
@@ -34,7 +34,7 @@ Custom Haptic Controller to assign haptic feedback on gameobjects.
 </br>
 Do you want each specific object to have their own custom haptic feedback when interacted in VR?
 </br>
-This [code](https://github.com/hamdanbasri/FPSDisplayForUnity) is here just to do that.
+This [code](https://github.com/hamdanbasri/HapticController-UnityXRInteractionToolkit/blob/main/HapticController.cs) is here just to do that.
 <br>
 Justin P Barnett has an in-depth [video](https://www.youtube.com/watch?v=-5tiV-lyYP8&ab_channel=JustinPBarnett) how he made his version.
 
@@ -55,7 +55,7 @@ Justin P Barnett has an in-depth [video](https://www.youtube.com/watch?v=-5tiV-l
 
 <!-- GETTING STARTED -->
 ## Getting Started
-![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fhamdanbasri%2FAutoRotateControl&label=Visitors&countColor=%23263759&style=flat)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fhamdanbasri%2FHapticController-UnityXRInteractionToolkit&label=Visitors&countColor=%23263759&style=flat)
 * Add XROrigin to the scene.
 * Attach the HapticController.cs script on both the LeftHand Controller and RightHand Controller.
 * Add a SphereCollider on both the LeftHand Controller and RightHand Controller and set the trigger to true.
