@@ -35,11 +35,9 @@ Custom Haptic Controller to assign haptic feedback on gameobjects.
 [![Made with Unity](https://img.shields.io/badge/Made%20with-Unity-57b9d3.svg?style=for-the-badge&logo=unity)](https://unity3d.com)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 </br>
->Do you want each specific object to have their own custom haptic feedback when interacted in VR?
-</br>
->These <a href="#codes">codes</a> are here just to do that.
-<br>
->> For and in-depth video Justin P Barnett has that covered https://www.youtube.com/watch?v=-5tiV-lyYP8&ab_channel=JustinPBarnett
+> Do you want each specific object to have their own custom haptic feedback when interacted in VR?
+>> These <a href="#codes">codes</a> are here just to do that.
+>>> For and in-depth video Justin P Barnett has that covered https://www.youtube.com/watch?v=-5tiV-lyYP8&ab_channel=JustinPBarnett
 
 <hr>
 
