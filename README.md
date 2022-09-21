@@ -62,9 +62,11 @@ Justin P Barnett has an in-depth [video](https://www.youtube.com/watch?v=-5tiV-l
       </ol>  
     </td>
 
-<img src="images/OpenXRPluginVersionImage.png" alt="OpenXRPluginVersionImage" width=50%>
-<img src="images/XRInteractionToolkitVersionImage.png" alt="XRInteractionToolkitVersionImage" width=50%>
-<img src="images/XRPluginManagementVersionImage.png" alt="XRPluginManagementVersion" width=50%>
+<div align="center">
+<img src="images/OpenXRPluginVersionImage.png" alt="OpenXRPluginVersionImage">
+<img src="images/XRInteractionToolkitVersionImage.png" alt="XRInteractionToolkitVersionImage">
+<img src="images/XRPluginManagementVersionImage.png" alt="XRPluginManagementVersion">
+</div>
 <hr>
 
 <!-- FUNCTIONS -->
