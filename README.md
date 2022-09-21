@@ -24,6 +24,7 @@ Custom Haptic Controller to assign haptic feedback on gameobjects.
     <li><a href="#functions">Functions</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#example">Example</a></li>
+    <li><a href="#code">Code</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -34,9 +35,9 @@ Custom Haptic Controller to assign haptic feedback on gameobjects.
 [![Made with Unity](https://img.shields.io/badge/Made%20with-Unity-57b9d3.svg?style=for-the-badge&logo=unity)](https://unity3d.com)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 </br>
-Do you want each specific object to have their own custom haptic feedback when interacted in VR?
+>Do you want each specific object to have their own custom haptic feedback when interacted in VR?
 </br>
-This [code](https://github.com/hamdanbasri/HapticController-UnityXRInteractionToolkit/blob/main/HapticController.cs) is here just to do that.
+This [code](#example) is here just to do that.
 <br>
 Justin P Barnett has an in-depth [video](https://www.youtube.com/watch?v=-5tiV-lyYP8&ab_channel=JustinPBarnett) how he made his version.
 
@@ -152,6 +153,60 @@ Attached to the Haptic object.
         </tr>
         </table>
 </div>
+
+<!-- CODE -->
+## Code
+
+Haptic Controller
+``` C
+using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
+
+public class HapticController : MonoBehaviour
+{
+    public XRBaseController vrController;
+    [Header("Right Click on this component and select Haptic Test to the feedback strength and duration.")]
+    [RangeAttribute(0f,1f)]
+    public float defaultAmplitude = 0.5f;
+    public float defaultDuration = 0.3f;
+
+    private void Start() {
+        vrController = GetComponent<XRBaseController>();
+    }
+
+    [ContextMenu("Haptic Test")]
+    public void SendHaptics()
+    {
+        vrController.SendHapticImpulse(defaultAmplitude, defaultAmplitude);
+    }
+
+    public void SendHaptics(XRBaseController controller, float amplitude, float duration)
+    {
+        controller.SendHapticImpulse(amplitude, duration);
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if(other.CompareTag("HapticObject"))
+        {
+            other.GetComponent<HapticObject>();
+            SendHaptics(vrController, other.GetComponent<HapticObject>().amplitude, other.GetComponent<HapticObject>().duration);
+        }
+    }
+}
+```
+
+Haptic Object
+``` C
+using UnityEngine;
+
+public class HapticObject : MonoBehaviour
+{    
+    [RangeAttribute(0f,1f)]
+    public float amplitude = 0.5f;
+    public float duration = 0.3f;
+}
+
+```
 
 <!-- CONTACT -->
 ## Contact
