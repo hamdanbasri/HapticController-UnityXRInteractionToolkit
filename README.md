@@ -47,7 +47,7 @@ Justin P Barnett has an in-depth [video](https://www.youtube.com/watch?v=-5tiV-l
   <h3>Project Requirements</h3>
     <ol>
       <li>Unity project is set up for VR Games.</li>
-      <li>Or follow along this [tutorial](https://www.youtube.com/watch?v=yxMzAw2Sg5w&ab_channel=JustinPBarnett) on how to setup.</li> 
+      <li>Or follow along this tutorial > (https://www.youtube.com/watch?v=yxMzAw2Sg5w&ab_channel=JustinPBarnett) on how to setup.</li> 
     </ol>
 
 
@@ -79,23 +79,24 @@ Justin P Barnett has an in-depth [video](https://www.youtube.com/watch?v=-5tiV-l
 ## Getting Started
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fhamdanbasri%2FHapticController-UnityXRInteractionToolkit&label=Visitors&countColor=%23263759&style=flat)
 * Add <strong>XROrigin</strong> to the scene.
-* Attach the HapticController.cs script on both the LeftHand Controller and RightHand Controller.
-* Add a SphereCollider on both the LeftHand Controller and RightHand Controller and set the trigger to true.
-* Create a Cube in the scene and rename it to HapticCube.
-* Add a Rigidbody component to the HapticCube, disable the gravity and enable the isKinematic.
-* Create a tag called HapticObject and assign the tag to the HapticCube.
-* Add a XR Simple Interactable component to the HapticCube.
-* Add the HapticObject.cs script to the HapticCube.
-* Adjust the Amplitude and Duration.
+* Attach the <strong>HapticController.cs</strong> script on both the LeftHand Controller and RightHand Controller
+[XR Origin > Camera Offset > LeftHand Controller & RightHandController].
+* Add a <strong>SphereCollider</strong> on both the LeftHand Controller and RightHand Controller and set the <strong>trigger to true</strong>.
+* Create a Cube in the scene and rename it to <strong>HapticCube</strong>.
+* Add a <strong>Rigidbody</strong> component to the HapticCube, <strong>disable the gravity and enable the isKinematic</strong>.
+* Create a <strong>tag called HapticObject</strong> and assign the tag to the HapticCube.
+* Add a <strong>XR Simple Interactable</strong> component to the HapticCube.
+* Add the <strong>HapticObject.cs</strong> script to the HapticCube.
+* Adjust the <strong>Amplitude and Duration</strong>.
 * Press Play, put on your headset, reach out towards the HapticCube using your controller and test the feedback.
 
 <hr>
 
 <h2>Pro-Tip:</h2>
-You can right click on the HapticController component and select Haptic Test when playing. This will give you a sense of how strong do you want the feedback to be.
+You can <strong>right click</strong> on the HapticController component and select Haptic Test when playing. This will give you a sense of how strong do you want the feedback to be.
 
 <h2>Known-Issues:</h2>
-Duration of the haptic feedback is limit to 2 seconds. Let me know if there is a way to increase the duration.
+Duration of the haptic feedback is <strong>limit to 2 seconds</strong>. Let me know if there is a way to increase the duration.
 
 <hr>
 
