@@ -1,14 +1,16 @@
 <a name="readme-top"></a>
-<h3 align="center">XR Interaction Toolkit Haptic Controller [Readme in Progress]</h3>
 
 <!-- PROJECT LOGO -->
 <div align="center">
 <a href="https://github.com/hamdanbasri/HapticController-UnityXRInteractionToolkit/blob/main/HapticController.cs">
-<img src="images/FPSDisplayLogo.png" alt="Logo">
+<img src="images/XITHCLogo.png" alt="Logo">
 </a>
+<br>
+<br>
 <p align="center">
 Custom Haptic Controller to assign haptic feedback on gameobjects.
 </p>
+<br>
 </div>
 <hr>
 
@@ -38,14 +40,32 @@ This [code](https://github.com/hamdanbasri/HapticController-UnityXRInteractionTo
 <br>
 Justin P Barnett has an in-depth [video](https://www.youtube.com/watch?v=-5tiV-lyYP8&ab_channel=JustinPBarnett) how he made his version.
 
-<strong>Project Requirements</strong>
-* Unity project is set up for VR Games.
-* Or follow along this [tutorial](https://www.youtube.com/watch?v=yxMzAw2Sg5w&ab_channel=JustinPBarnett) on how to setup.
+<hr>
 
-<strong>Package Manager Requirements</strong>
-* Open XR Plugin [Tested on 1.4.2]
-* XR Interaction Toolkit [Tested on 2.1.1]
-* XR Plugin Management [Tested on 4.2.0]
+
+
+  <h3>Project Requirements</h3>
+    <ol>
+      <li>Unity project is set up for VR Games.</li>
+      <li>Or follow along this [tutorial](https://www.youtube.com/watch?v=yxMzAw2Sg5w&ab_channel=JustinPBarnett) on how to setup.</li> 
+    </ol>
+
+
+<hr>
+
+  <h3>Package Manager Requirements</h3>
+    <td>
+      <ol>
+        <li>Open XR Plugin [Tested on 1.4.2]</li>
+        <li>XR Interaction Toolkit [Tested on 2.1.1]</li>
+        <li>XR Plugin Management [Tested on 4.2.0]</li>
+      </ol>  
+    </td>
+
+<img src="images/OpenXRPluginVersionImage.png" alt="OpenXRPluginVersionImage" width=50%>
+<img src="images/XRInteractionToolkitVersionImage.png" alt="XRInteractionToolkitVersionImage" width=50%>
+<img src="images/XRPluginManagementVersionImage.png" alt="XRPluginManagementVersion" width=50%>
+<hr>
 
 <!-- FUNCTIONS -->
 ## Functions
@@ -56,7 +76,7 @@ Justin P Barnett has an in-depth [video](https://www.youtube.com/watch?v=-5tiV-l
 <!-- GETTING STARTED -->
 ## Getting Started
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fhamdanbasri%2FHapticController-UnityXRInteractionToolkit&label=Visitors&countColor=%23263759&style=flat)
-* Add XROrigin to the scene.
+* Add <strong>XROrigin</strong> to the scene.
 * Attach the HapticController.cs script on both the LeftHand Controller and RightHand Controller.
 * Add a SphereCollider on both the LeftHand Controller and RightHand Controller and set the trigger to true.
 * Create a Cube in the scene and rename it to HapticCube.
@@ -65,13 +85,19 @@ Justin P Barnett has an in-depth [video](https://www.youtube.com/watch?v=-5tiV-l
 * Add a XR Simple Interactable component to the HapticCube.
 * Add the HapticObject.cs script to the HapticCube.
 * Adjust the Amplitude and Duration.
-* Press Play and Test the feedback.
+* Press Play, put on your headset, reach out towards the HapticCube using your controller and test the feedback.
 
 <hr>
 
-Pro-Tip:
-<br>
+<h2>Pro-Tip:</h2>
 You can right click on the HapticController component and select Haptic Test when playing. This will give you a sense of how strong do you want the feedback to be.
+
+<hr>
+
+<hr>
+
+<h2>Known-Issues:</h2>
+Duration of the haptic feedback is limit to 2 seconds. Let me know if there is a way to increase the duration.
 
 <hr>
 
@@ -79,19 +105,47 @@ You can right click on the HapticController component and select Haptic Test whe
 ## Example
 
 <div align="center">
-<img src="images/FPSDisplaySample.jpg" alt="Sample">
+<img src="images/HapticControllerExampleImage.png" alt="Sample">
 <p align="center">
-Sample.
+Attached on both the LeftHand Controller and RightHand Controller.
 </p>
 </br>
         <table>
         <tr>
             <td>Variable</td>
             <td>Annotation</td>
-            </td>
+        </tr>
+        <tr>
+            <td>VR Controller</td>
+            <td>Automatically find the XR Base Controller in your GameObject component</td>
+        </tr>
+        <tr>
+            <td>Default Amplitude</td>
+            <td>Set the default strength of the haptic feedback</td>
+        </tr>
+        <tr>
+            <td>Default Duration</td>
+            <td>Set the default duration of the haptic feedback</td>
+        </tr>
+        </table>
+</div>
+
+<br>
+
+<div align="center">
+<img src="images/HapticObjectExampleImage.png" alt="Sample">
+<p align="center">
+Attached to the Haptic object.
+</p>
+</br>
+        <table>
+        <tr>
+            <td>Variable</td>
+            <td>Annotation</td>
+        </tr>
         <tr>
             <td>Amplitude</td>
-            <td>Set the strength of the haptic feedback</td>
+            <td>Set the strength of the haptic feedback on this GameObject</td>
         </tr>
         <tr>
             <td>Duration</td>
