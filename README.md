@@ -94,10 +94,6 @@ Justin P Barnett has an in-depth [video](https://www.youtube.com/watch?v=-5tiV-l
 <h2>Pro-Tip:</h2>
 You can right click on the HapticController component and select Haptic Test when playing. This will give you a sense of how strong do you want the feedback to be.
 
-<hr>
-
-<hr>
-
 <h2>Known-Issues:</h2>
 Duration of the haptic feedback is limit to 2 seconds. Let me know if there is a way to increase the duration.
 
